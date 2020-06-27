@@ -40,7 +40,7 @@ function App() {
   }
 
   return (
-    <div className="flex justify-center">
+    <div className="bg-gray-400 flex justify-center">
       <header>
         <div>
           <input type="file" onChange={(event) => onChangeHandler(event)} />
