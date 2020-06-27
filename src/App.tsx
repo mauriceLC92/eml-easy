@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import { testHtml } from './inputHtml';
 const emlformat = require('eml-format');
 
 // const ReactDOMServer = require('react-dom/server');
 const HtmlToReactParser = require('html-to-react').Parser;
 
 const htmlToReactParser = new HtmlToReactParser();
-const reactElement = htmlToReactParser.parse(testHtml);
+// const reactElement = htmlToReactParser.parse(testHtml);
 // const reactHtml = ReactDOMServer.renderToStaticMarkup(reactElement);
 
 function App() {
@@ -39,16 +38,10 @@ function App() {
       console.log('Error: ', error);
     };
   }
-  // const onClickHandler = () => {
-  //   const data = new FormData();
-  //   data.append('file', file);
-  //   axios.post("http://localhost:5000/upload", data, {
-  //     // receive two    parameter endpoint url ,form data
-  //   }).then((res) => console.log(res))
-  // }
+
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="flex justify-center">
+      <header>
         <div>
           <input type="file" onChange={(event) => onChangeHandler(event)} />
           {/* <button onClick={() => onClickHandler()}>
