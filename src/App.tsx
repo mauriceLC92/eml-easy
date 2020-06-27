@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavBar } from './components/NavigationBar';
 const emlformat = require('eml-format');
 
 // const ReactDOMServer = require('react-dom/server');
@@ -30,9 +31,6 @@ function App() {
         }
         setFile(data.html);
       });
-      // const html = readEmlFile(reader.result)
-      // console.log('html', JSON.stringify(html, null, 4));
-      // setFile(html)
     };
     reader.onerror = function (error) {
       console.log('Error: ', error);
@@ -40,13 +38,11 @@ function App() {
   }
 
   return (
-    <div className="bg-gray-400 flex justify-center">
-      <header>
+    <div>
+      <NavBar />
+      <div className="flex">
         <div>
           <input type="file" onChange={(event) => onChangeHandler(event)} />
-          {/* <button onClick={() => onClickHandler()}>
-            Upload!
-          </button> */}
         </div>
         <div>
           {
@@ -56,7 +52,7 @@ function App() {
         {
           image && image.length > 0 && <img src={`${image}`} alt="dv" />
         }
-      </header>
+      </div>
     </div>
   );
 }

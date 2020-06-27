@@ -14,6 +14,6 @@ Also allows for viewing of newsletter in the full screen of your browser window 
 
 ### Tech
 
-- React [Create React App](https://create-react-app.dev/)
+- React: [Create React App](https://create-react-app.dev/)
 - [TailwindCSS](https://tailwindcss.com/)
 - Hosted on [Vercel](https://vercel.com/)

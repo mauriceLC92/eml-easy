@@ -1,0 +1,7 @@
+.navigation-link {
+  @apply text-white px-2 block font-semibold rounded;
+}
+
+.navigation-link:hover {
+  @apply bg-gray-700;
+}
