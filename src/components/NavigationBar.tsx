@@ -24,8 +24,9 @@ export const NavBar = () => {
     </div>
     {
       <div className={`${isMenuOpen ? 'block px-2 pt-2 pb-4 space-y-2' : 'hidden px-2 pt-2 pb-4 sm:flex sm:items-center sm:p-0'}`}>
-        <a href='#' className="mt-1 text-white px-2 block font-semibold hover:bg-gray-700 rounded sm:ml-2">Home</a>
-        <a href='#' className="mt-1 text-white px-2 block font-semibold hover:bg-gray-700 rounded sm:ml-2">Viewer</a>
+        {
+          ['Home', 'Viewer'].map((navItem) => <a href='#' className="mt-1 text-white px-2 block font-semibold hover:bg-gray-700 rounded sm:ml-2">{navItem}</a>)
+        }
       </div>
     }
   </header>
