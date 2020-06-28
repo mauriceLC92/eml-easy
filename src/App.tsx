@@ -42,25 +42,3 @@ function App() {
 }
 
 export default App;
-
-
-
-{/* <div className="flex justify-center items-center">
-<div>
-  <h1 className='text-6xl text-center'>
-    Easy .eml{' '}
-    <span className='text-6xl' role="img" aria-label="email">📧</span>
-  </h1>
-</div>
-<div className="flex justify-center items-center w-screen h-screen">
-  <input className="block" type="file" onChange={(event) => onChangeHandler(event)} />
-</div>
-<div>
-  {
-    file && htmlToReactParser.parse(file)
-  }
-</div>
-{
-  image && image.length > 0 && <img src={`${image}`} alt="dv" />
-}
-</div> */}
